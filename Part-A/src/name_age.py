@@ -1,20 +1,20 @@
-"""TODO: Replace with a one-line summary of the program's purpose (<73 chars).
+"""Calculates and displays a user's birth year based on their age.
 
 Input:
-    TODO: Replace with a major input, including its type and source.
-    TODO: Replace with another major input, or delete this TODO line.
-    TODO: Replace with another major input, or delete this TODO line.
+    user_name (str): Manually entered
+    user_age_str (str): Manually entered.
+    CURRENT_YEAR (int): Automatically retrieved from the system.
 
 Process:
-    TODO: Replace with a major processing step.
+    Subtract user's age from the current year to find out the year of birth.
 
 Output:
-    TODO: Replace with a major output, including its type and destination.
+    Greeting that is personalized with the individuals year of birth. String will be displayed on the output terminal.
 
 Typical usage example:
-    TODO: Replace with the input prompt and original name-input example.
-    TODO: Replace with the input prompt and original age-input example.
-    TODO: Replace with the resulting output from those inputs.
+    What is your name? Layla
+    How old are you? 39
+    Hello Layla! You were born in 1987.
 """
 # === Imports ===
 from datetime import date
@@ -29,14 +29,15 @@ def main() -> None:
     """Run the name-age program."""
 
     # Get user input.
-    # TODO: Replace with code to get user's name as a string. See zyBooks 1.3.
-    # TODO: Replace with code to get user's age as an integer. See zyBooks 2.6.
+    user_name = input("What is your name? ")
+    user_age_str = input("How old are you? ")
 
     # Calculate user's approximate birth year.
-    # TODO: Replace with code to process data. See zyBooks 1.16 & 1.17.
+    user_age = int(user_age_str)
+    birth_year = CURRENT_YEAR - user_age
 
     # Output personalized message with user's name and birth year.
-    # TODO: Replace with code to output formatted results. zyBooks 1.3 & 2.7.
+    print(f"Hello {user_name}! You were born in {birth_year}.")
 
 
 # === Main Guard ===
@@ -45,5 +46,5 @@ if __name__ == "__main__":
 
 
 # === References ===
-# TODO: Replace with an APA-style reference for a source you used, or delete.
-# TODO: Replace with another APA-style reference, or delete this TODO line.
+zyBooks. (2026).Zybooks.Com. https://learn.zybooks.com/zybook/IT-140-11100-M01_Introduction_to_Scripting_2026_C-5
+
