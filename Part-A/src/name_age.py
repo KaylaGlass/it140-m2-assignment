@@ -1,15 +1,16 @@
-"""TODO: Replace with a one-line summary of the program's purpose (<73 chars).
+TODO: import datetime
 
 Input:
-    TODO: Replace with a major input, including its type and source.
-    TODO: Replace with another major input, or delete this TODO line.
-    TODO: Replace with another major input, or delete this TODO line.
+    TODO: current_year = datetime.date.today().year
+    TODO: user_name = input("What is your name?")
+    TODO: user_age_str = input("How old are you?")
 
 Process:
-    TODO: Replace with a major processing step.
+    TODO: user_age = int(user_age_str)
+    birth_year = current_year - user_age
 
 Output:
-    TODO: Replace with a major output, including its type and destination.
+    TODO: print(f"Hello {user_name}! You were born in {birth_year}.")
 
 Typical usage example:
     TODO: Replace with the input prompt and original name-input example.
